@@ -1,6 +1,6 @@
 function gamificationLogic() {
 
-  const serverUrl = "http://localhost:3333";
+  const serverUrl = "https://promodotestserver.onrender.com";
 
   let expirationInDays;
 
