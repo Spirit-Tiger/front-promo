@@ -1,6 +1,6 @@
 function gamificationLogic() {
 
-  const serverUrl = "https://promodotestserver.onrender.com";
+  const serverUrl = "https://promodo-test-1.vercel.app/";
 
   let expirationInDays;
 
