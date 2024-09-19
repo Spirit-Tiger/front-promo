@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/exo-2" rel="stylesheet">        
+    <link rel="stylesheet" href="style.css">
+    <title>Promodo</title>
+</head>
+<body>
+    <div class="homepage">
+        <div id="banner" class="banner-container">
+            <img src="Wheel2.png" alt="">
+        </div>
+     
+        <div id="modal" class="modal-container">
+            <div class="modal-window">
+                <div id="close-btn" class="close-button"></div>
+                <div class="modal-content сolor-blue">
+                    <div id="d1" class="modal-dialog">
+                        <div class="fs30 bold-700 m-fs20">Вигравайте знижку <br>до 10-річчя Infoshina!</div>
+                        <div class="info-text fs16">Щоб зіграти, введіть email</div>
+                        <div id="form1">
+                            <div class="input-container">
+                                <input id="email-input" class="modal-email-input fs16" type="email" name="email" placeholder="Email">
+                                <div id="error-email" class="error-message m-fs10">Будь ласка, вкажіть емейл з іншим доменом</div>
+                            </div>
+                            <button id="email-button" class="modal-button color-white fs14 bold-600">Крути рулетку</button>
+                        </div>
+                        <div class="details color-grey fs14 m-fs12">Деталі умови акції за <a href="#" class="сolor-blue">посиланням</a></div>
+                    </div>
+                    <div id="d2" class="modal-dialog">
+                        <div class="fs30 bold-700 m-fs20">Код для участі в грі<br>вже на вашій пошті!</div>
+                        <div class="info-text fs16">Скопіюйте його<br>вставте у віконце нижче</div>
+                        <div id="form2">
+                            <div class="input-container">
+                                <input id="code-input" class="modal-email-input fs16" type="text" name="text" placeholder="Code">
+                                <div id="error-code" class="error-message m-fs10">Невірний код підтвердження</div>
+                            </div>
+                            <button id="code-button" class="modal-button color-white fs14 bold-600">Грати</button>
+                        </div>
+                        <div class="details color-grey fs14 m-fs12">Деталі умови акції за <a href="#" class="сolor-blue">посиланням</a></div>
+                    </div>
+                    <div id="d3" class="modal-dialog">
+                        <div class="play-screen-text">
+                            <div id="spin-main-text" class="fs30 bold-700 m-fs20">У вас є три спроби<br>виграти знижку.<br>Крутіть рулетку!</div>
+                            <div id="spin-aditional-text" class="info-text">Приз чекає вас на пошті</div>
+                        </div>   
+                        <div class="play-button-container">
+                            <button id="play-button" class="modal-button color-white fs14 bold-600">Крутити рулетку</button>
+                            <div class="details color-grey fs14 m-fs12">Деталі умови акції за <a href="#" class="сolor-blue">посиланням</a></div>
+                        </div> 
+                    </div>
+                    <div id="d4" class="modal-dialog">
+                        <div>
+                            <div class="fs30 bold-700 m-fs20">На жаль, всі спроби<br>вичерпано</div>
+                            <div class="info-text fs16">Але не засмучуйтесь, адже<br>на сайті стільки вигідних<br>пропозицій!</div>  
+                        </div>
+                        <div class="button-and-details">
+                            <a class="color-white fs14 bold-600" href="https://infoshina.com.ua/uk?utm_source=eSputnik-landing&utm_medium=landing&utm_campaign=Activity_HB_2023_lose">
+                                <button id="loss-button" class="modal-button color-white fs14 bold-600">Переглянути</button></a>
+                            <div class="details color-grey fs14 m-fs12">Деталі умови акції за <a href="#" class="сolor-blue">посиланням</a></div>
+                        </div>
+                    </div>
+                    <div class="modal-roulette">
+                        <div class="pointer"></div>
+                        <div id="spinningWheel" class="roulette-moving">
+                        </div>
+                        <div class="modal-wheel"><div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<script src="index.js"></script> 
+</body>
+</html>

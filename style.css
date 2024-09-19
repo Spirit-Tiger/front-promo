@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Exo 2", Arial, Helvetica, sans-serif;
+}
+
+.homepage {
+  height: 200vh;
+  background-color: #b4b4b4;
+}
+
+.banner-container {
+  display: none;
+  position: fixed;
+  bottom: 27px;
+  right: 40px;
+}
+
+.banner-container:hover {
+  cursor: pointer;
+}
+
+.modal-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #00000070;
+}
+
+.modal-window {
+  width: 720px;
+  height: 480px;
+  position: relative;
+}
+
+.close-button {
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 13px;
+  background: url("./CloseImage.png");
+}
+
+.close-button:hover {
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  width: 603px;
+  height: 321px;
+  margin-top: 70px;
+  background: url("ModalBGWhite.png");
+}
+
+#d1 {
+  display: flex;
+}
+
+#d2 {
+  display: none;
+}
+
+#d3 {
+  margin-top: 60px;
+  display: none;
+  justify-content: space-between;
+}
+
+#d4 {
+  margin-top: 40px;
+  display: none;
+  justify-content: space-between;
+}
+
+.modal-dialog {
+  width: 60%;
+  margin: 20px 0 23px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-text {
+  margin-top: 20px;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+#form1 {
+  margin-top: 30px;
+}
+
+.modal-dialog a {
+  text-decoration: none;
+}
+
+.modal-email-input {
+  width: 286px;
+  height: 40px;
+  padding: 0 20px;
+  border: 1px solid #63B8F6;
+  border-radius: 2px;
+}
+
+.modal-email-input::placeholder {
+  font-family: "Exo 2", Arial, Helvetica, sans-serif;
+}
+
+.input-container {
+  position: relative;
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+  top: 40px;
+  font-size: 14px;
+  color: #b83c3c;
+}
+
+#d2 .error-message {
+  top: 50px;
+}
+
+.modal-button {
+  width: 180px;
+  height: 40px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #1DA5FF 0%, #1D62B3 100%);
+}
+
+#code-input {
+  margin-top: 10px;
+}
+
+.modal-button:hover {
+  cursor: pointer;
+  background: linear-gradient(180deg, #169df7 0%, #1758a3 100%);
+}
+
+.modal-wheel {
+  width: 387px;
+  height: 414px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: url("ModalWheel.png") no-repeat center/cover;
+}
+
+.modal-roulette {
+  position: absolute;
+  right: 0px;
+  top: 35px;
+}
+
+.pointer {
+  z-index: 2;
+  width: 97px;
+  height: 58px;
+  position: absolute;
+  top: 166px;
+  right: 156px;
+  background: url("Pointer.png") no-repeat center/cover;
+  ;
+}
+
+.roulette-moving {
+  z-index: 1;
+  width: 384px;
+  height: 384px;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  background: url("SpinningPart.png") no-repeat center/cover;
+}
+
+#spin-aditional-text {
+  display: none;
+}
+
+.play-button-container {
+  margin-bottom: -3px;
+}
+
+
+.color-white {
+  color: #ffffff;
+}
+
+.сolor-blue {
+  color: #1056A5;
+}
+
+.color-grey {
+  color: #BFBFBF;
+}
+
+.fs30 {
+  font-size: 30px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.bold-600 {
+  font-weight: 600;
+}
+
+.bold-700 {
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 720px) {
+
+  .banner-container {
+    display: none;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+  }
+
+  .banner-container img {
+    width: 200px;
+  }
+
+  .modal-container {
+    display: none;
+  }
+
+  .modal-window {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 290px;
+    height: 525px;
+    position: relative;
+  }
+
+  .close-button {
+    display: none;
+  }
+
+  .modal-roulette {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+
+  .modal-content {
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    width: 270px;
+    height: 405px;
+    margin-top: 0;
+    border-radius: 2px;
+    background: url("ModalBGWhite.png") no-repeat center/cover;
+  }
+
+  .modal-dialog {
+    width: 100%;
+    height: 56%;
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-text {
+    margin-top: 10px;
+  }
+
+  #d1>div:first-child {
+    margin-top: 12px;
+  }
+
+  #d2>div:first-child {
+    margin-top: 6px;
+  }
+
+  #d2 .info-text {
+    margin-top: 2px;
+  }
+
+  #d2 .error-message {
+    top: 40px;
+  }
+
+  #d3>div:first-child {
+    margin-top: 38px;
+  }
+
+  #d3 .play-button {
+    margin-top: 0px;
+  }
+
+  #d3 .modal-button {
+    margin-top: 0px;
+  }
+
+  #d4>div:first-child {
+    margin-top: 20px;
+  }
+
+  #d4 .info-text {
+    margin-top: 20px;
+  }
+
+  #form1 {
+    margin-top: 10px;
+  }
+
+  .modal-email-input {
+    width: 230px;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #63B8F6;
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  .modal-email-input::placeholder {
+    text-align: center;
+  }
+
+
+  .modal-button {
+    width: 230px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+    background: linear-gradient(180deg, #1DA5FF 0%, #1D62B3 100%);
+  }
+
+  #code-input {
+    margin-top: 4px;
+  }
+
+  .play-button-container {
+    margin-bottom: 4px;
+  }
+
+  .modal-wheel {
+    width: 302px;
+    height: 302px;
+    position: absolute;
+    top: -2.5px;
+    right: -5px;
+    background: url("MobileWheel.png") no-repeat center/cover;
+  }
+
+  .pointer {
+    z-index: 2;
+    width: 60px;
+    position: absolute;
+    top: 120px;
+    right: 125px;
+    background: url("Pointer.png") no-repeat center/cover;
+    ;
+  }
+
+  .roulette-moving {
+    width: 298px;
+    height: 298px;
+    position: absolute;
+    top: 0px;
+    right: -3px;
+    background: url("SpinningPart.png") no-repeat center/cover;
+  }
+
+  .details {
+    margin-top: 6px;
+  }
+
+  .m-fs20 {
+    font-size: 20px;
+  }
+
+  .m-fs14 {
+    font-size: 14px;
+  }
+
+  .m-fs12 {
+    font-size: 12px;
+  }
+
+  .m-fs10 {
+    font-size: 10px;
+  }
+}
